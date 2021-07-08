@@ -5,9 +5,9 @@
 
 #pragma once
 
-#include<iostream>
-#include<utility> 
-#include<algorithm>
+#include <iostream>
+#include <utility> 
+#include <algorithm>
 
 std::pair<int, int> swap(int a, int b)
 {

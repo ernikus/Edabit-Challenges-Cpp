@@ -13,7 +13,7 @@ bool execute(int const inputData1, int const inputData2, std::pair<int, int> con
     std::cout << "Input1:\t" << inputData1 << std::endl;
     std::cout << "Input2:\t" << inputData2 << std::endl;
     std::cout << "Output:\t" << test.first  << ", " << test.second << std::endl;
-    std::cout << "Answer:\t" << test.first << ", " << test.second << std::endl;
+    std::cout << "Answer:\t" << answer.first << ", " << answer.second << std::endl;
 
     if (test == answer)
     {
