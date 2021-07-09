@@ -7,18 +7,17 @@
 
 #include <iostream>
 
-bool execute(int const inputData, std::string const test, std::string const answer)
+bool execute(const int input, const std::string output, const std::string answer)
 {
-    std::cout << "Input:\t" << inputData << std::endl;
-    std::cout << "Output:\t" << test << std::endl;
+    std::cout << "Input:\t" << input << std::endl;
+    std::cout << "Output:\t" << output << std::endl;
     std::cout << "Answer:\t" << answer << std::endl;
 
-    if (test == answer)
+    if (output == answer)
     {
         std::cout << "Correct Answer!" << std::endl << std::endl;
         return true;
     }
-
     else
     {
         std::cout << "Bad Answer!" << std::endl << std::endl;

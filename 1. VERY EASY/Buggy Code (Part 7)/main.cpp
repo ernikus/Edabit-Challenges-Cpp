@@ -8,19 +8,18 @@
 #include <iostream>
 #include <utility>
 
-bool execute(int const inputData1, int const inputData2, std::pair<int, int> const test, std::pair<int, int> const answer)
+bool execute(const int input1, const int input2, const std::pair<int, int> output, const std::pair<int, int> answer)
 {
-    std::cout << "Input1:\t" << inputData1 << std::endl;
-    std::cout << "Input2:\t" << inputData2 << std::endl;
-    std::cout << "Output:\t" << test.first  << ", " << test.second << std::endl;
+    std::cout << "Input1:\t" << input1 << std::endl;
+    std::cout << "Input2:\t" << input2 << std::endl;
+    std::cout << "Output:\t" << output.first  << ", " << output.second << std::endl;
     std::cout << "Answer:\t" << answer.first << ", " << answer.second << std::endl;
 
-    if (test == answer)
+    if (output == answer)
     {
         std::cout << "Correct Answer!" << std::endl << std::endl;
         return true;
     }
-
     else
     {
         std::cout << "Bad Answer!" << std::endl << std::endl;

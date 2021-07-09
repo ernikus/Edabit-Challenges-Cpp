@@ -1,6 +1,6 @@
-//Title:        Buggy Code
+//Title:        Buggy Code (Part 1)
 //Difficulty:   Very Easy
-//Source:       https://edabit.com/challenge/9p6Lfwu8tYazvaHGe
+//Source:       https://edabit.com/challenge/fQp4JGfGhvEY5DTdb
 //Soln Author:	ernikus
 
 #pragma once

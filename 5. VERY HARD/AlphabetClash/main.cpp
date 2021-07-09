@@ -8,33 +8,34 @@
 #include <iostream>
 #include <vector>
 
-bool execute(std::string inputDataA1, std::vector<int> inputDataA2, std::string inputDataB1, std::vector<int> inputDataB2, std::string const test, std::string const answer)
+bool execute(const std::string inputA1, const std::vector<int> inputA2, const std::string inputB1, const std::vector<int> inputB2, const std::string output, const std::string answer)
 {
-    std::cout << "InputA1:\t" << inputDataA1 << std::endl;
+    std::cout << "InputA1:\t" << inputA1 << std::endl;
     std::cout << "InputA2:\t";
 
-    for (int i = 0; i < inputDataA2.size(); i++)
-        std::cout << inputDataA2[i] << " ";
+    for (int i = 0; i < inputA2.size(); i++)
+        std::cout << inputA2[i] << " ";
 
     std::cout << std::endl;
 
-    std::cout << "InputB1:\t" << inputDataB1 << std::endl;
+
+    std::cout << "InputB1:\t" << inputB1 << std::endl;
     std::cout << "InputB2:\t";
 
-    for (int i = 0; i < inputDataB2.size(); i++)
-        std::cout << inputDataB2[i] << " ";
+    for (int i = 0; i < inputB2.size(); i++)
+        std::cout << inputB2[i] << " ";
 
     std::cout << std::endl;
 
-    std::cout << "Output:\t" << test << std::endl;
+
+    std::cout << "Output:\t" << output << std::endl;
     std::cout << "Answer:\t" << answer << std::endl;
 
-    if (test == answer)
+    if (output == answer)
     {
         std::cout << "Correct Answer!" << std::endl << std::endl;
         return true;
     }
-
     else
     {
         std::cout << "Bad Answer!" << std::endl << std::endl;

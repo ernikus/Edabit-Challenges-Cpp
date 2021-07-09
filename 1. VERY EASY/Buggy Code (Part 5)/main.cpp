@@ -8,17 +8,18 @@
 #include <iostream>
 #include <vector>
 
-bool execute(int const inputData, std::vector<int> const test, std::vector<int> const answer)
+bool execute(const int input, const std::vector<int> output, const std::vector<int> answer)
 {
-    std::cout << "Input:\t" << inputData << std::endl;
+    std::cout << "Input:\t" << input << std::endl;
 
 
     std::cout << "Output:\t";
 
-    for(int i=0; i<test.size(); i++)
-         std::cout << test[i] << " ";
+    for(int i=0; i<output.size(); i++)
+         std::cout << output[i] << " ";
 
     std::cout << std::endl;
+
 
     std::cout << "Answer:\t";
 
@@ -28,12 +29,11 @@ bool execute(int const inputData, std::vector<int> const test, std::vector<int> 
     std::cout << std::endl;
 
 
-    if (test == answer)
+    if (output == answer)
     {
         std::cout << "Correct Answer!" << std::endl << std::endl;
         return true;
     }
-
     else
     {
         std::cout << "Bad Answer!" << std::endl << std::endl;

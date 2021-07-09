@@ -8,7 +8,7 @@
 #include <iostream>
 #include <vector>
 
-bool execute(const std::vector<int> input, bool const output, bool const answer)
+bool execute(const std::vector<int> input, const bool output, const bool answer)
 {
     std::cout << "Input:\t-none-" << std::endl;
     std::cout << "Output:\t" << output << std::endl;
@@ -19,7 +19,6 @@ bool execute(const std::vector<int> input, bool const output, bool const answer)
         std::cout << "Correct Answer!" << std::endl << std::endl;
         return true;
     }
-
     else
     {
         std::cout << "Bad Answer!" << std::endl << std::endl;
