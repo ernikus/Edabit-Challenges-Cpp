@@ -22,6 +22,7 @@ bool execute(const int input, const std::vector< std::vector<int> > output, cons
     }
     std::cout << std::endl;
 
+
     std::cout << "Answer:" << std::endl;
     for (int i = 0; i < answer.size(); ++i)
     {
@@ -31,6 +32,7 @@ bool execute(const int input, const std::vector< std::vector<int> > output, cons
         std::cout << std::endl;
     }
     std::cout << std::endl;
+
 
     if (output == answer)
     {
@@ -102,55 +104,6 @@ int main()
 
 	correct += execute(0, squarePatch(0), {});
 	testNum++;
-
-
-    /*
-    
-    Assert::That(squarePatch(3), Equals(std::vector<std::vector<int>>({
-			{3, 3, 3}, 
-			{3, 3, 3}, 
-			{3, 3, 3}
-		})));
-	}
-	It(test2)
-	{
-		Assert::That(squarePatch(2), Equals(std::vector<std::vector<int>>({
-			{2, 2}, 
-			{2, 2}
-		})));
-	}
-		It(test3)
-	{
-		Assert::That(squarePatch(4), Equals(std::vector<std::vector<int>>({
-			{4, 4, 4, 4}, 
-			{4, 4, 4, 4}, 
-			{4, 4, 4, 4}, 
-			{4, 4, 4, 4}
-		})));
-	}
-	It(test4)
-	{
-		Assert::That(squarePatch(5), Equals(std::vector<std::vector<int>>({
-			{5, 5, 5, 5, 5}, 
-			{5, 5, 5, 5, 5}, 
-			{5, 5, 5, 5, 5}, 
-			{5, 5, 5, 5, 5}, 
-			{5, 5, 5, 5, 5}
-		})));
-	}
-		It(test5)
-	{
-		Assert::That(squarePatch(6), Equals(std::vector<std::vector<int>>({
-			{6, 6, 6, 6, 6, 6}, 
-			{6, 6, 6, 6, 6, 6}, 
-			{6, 6, 6, 6, 6, 6}, 
-			{6, 6, 6, 6, 6, 6}, 
-			{6, 6, 6, 6, 6, 6}, 
-			{6, 6, 6, 6, 6, 6}
-		})));
-	}
-    
-    */
 
 
     std::cout << "Correctness: " << std::endl;
